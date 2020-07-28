@@ -8,6 +8,7 @@ import StateMethodDemo from "./Component/State/StateMethodDemo";
 import BaiTapChonXe from "./BaiTap/State_Event_DataBinding/BaiTapChonXe";
 import BaiTapVongLap from "./BaiTap/BaiTapVongLap/BaiTapVongLap";
 import BaiTapVongLapWebPhim from "./BaiTap/BaiTapVongLap/BaiTapVongLapWebPhim";
+import BaiTapDemoProps from "./Component/Props/BaiTapDemoProps";
 function App() {
 	return (
 		<div className="App">
@@ -17,7 +18,8 @@ function App() {
 			{/* <StateMethodDemo /> */}
 			{/* <BaiTapChonXe /> */}
 			{/* <BaiTapVongLap /> */}
-			<BaiTapVongLapWebPhim />
+			{/* <BaiTapVongLapWebPhim /> */}
+			<BaiTapDemoProps />
 		</div>
 	);
 }
