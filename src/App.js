@@ -5,6 +5,9 @@ import BaiTapChiaComponent from "./BaiTap_Deadline/BaiTapDeadline180720/BaiTapCh
 import DataBindingDemo from "./Component/DataBinding/DataBindingDemo";
 import EventDemo from "./Component/Event/EventDemo";
 import StateMethodDemo from "./Component/State/StateMethodDemo";
+import BaiTapChonXe from "./BaiTap/State_Event_DataBinding/BaiTapChonXe";
+import BaiTapVongLap from "./BaiTap/BaiTapVongLap/BaiTapVongLap";
+import BaiTapVongLapWebPhim from "./BaiTap/BaiTapVongLap/BaiTapVongLapWebPhim";
 function App() {
 	return (
 		<div className="App">
@@ -12,6 +15,9 @@ function App() {
 			{/* <DataBindingDemo /> */}
 			{/* <EventDemo /> */}
 			{/* <StateMethodDemo /> */}
+			{/* <BaiTapChonXe /> */}
+			{/* <BaiTapVongLap /> */}
+			<BaiTapVongLapWebPhim />
 		</div>
 	);
 }
