@@ -22,8 +22,8 @@ function App() {
 			{/* <BaiTapVongLap /> */}
 			{/* <BaiTapVongLapWebPhim /> */}
 			{/* <BaiTapDemoProps /> */}
-			<GlobalStyle />
-			<EmojiBoard />
+			{/* <GlobalStyle /> */}
+			{/* <EmojiBoard /> */}
 		</div>
 	);
 }
