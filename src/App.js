@@ -1,6 +1,7 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
+import BaiTapGameXucXac from "./Component/Redux/BaiTapXucXac/BaiTapGameXucXac";
 // import BaiTapChiaComponent from "./BaiTap_Deadline/BaiTapDeadline180720/BaiTapChiaComponent";
 // import DataBindingDemo from "./Component/DataBinding/DataBindingDemo";
 // import EventDemo from "./Component/Event/EventDemo";
@@ -11,7 +12,7 @@ import "./App.css";
 // import BaiTapDemoProps from "./Component/Props/BaiTapDemoProps";
 // import EmojiBoard from "./Component/Emoji/EmojiBoard";
 // import GlobalStyle from "./Component/Emoji/GlobalStyles";
-import BaiTapGioHangRedux from "./Component/Redux/BaiTapGioHang/BaiTapGioHangRedux";
+// import BaiTapGioHangRedux from "./Component/Redux/BaiTapGioHang/BaiTapGioHangRedux";
 function App() {
 	return (
 		<div className="App">
@@ -25,7 +26,8 @@ function App() {
 			{/* <BaiTapDemoProps /> */}
 			{/* <GlobalStyle /> */}
 			{/* <EmojiBoard /> */}
-			<BaiTapGioHangRedux />
+			{/* <BaiTapGioHangRedux /> */}
+			<BaiTapGameXucXac />
 		</div>
 	);
 }

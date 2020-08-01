@@ -11,7 +11,6 @@ const stateGioHang = {
 };
 
 export const GioHangReducer = (state = stateGioHang, action) => {
-	console.log(action.type);
 	switch (action.type) {
 		case "THEM_GIO_HANG": {
 			let gioHangCapNhat = [...state.gioHang];
