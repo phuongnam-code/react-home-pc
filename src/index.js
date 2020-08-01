@@ -9,7 +9,7 @@ import { createStore } from "redux";
 import { rootReducer } from "./redux/reducers/rootReducer";
 
 //tạo ra store tổng của ứng dụng
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
 	<Provider store={store}>

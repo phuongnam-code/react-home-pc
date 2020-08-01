@@ -9,8 +9,9 @@ import "./App.css";
 // import BaiTapVongLap from "./BaiTap/BaiTapVongLap/BaiTapVongLap";
 // import BaiTapVongLapWebPhim from "./BaiTap/BaiTapVongLap/BaiTapVongLapWebPhim";
 // import BaiTapDemoProps from "./Component/Props/BaiTapDemoProps";
-import EmojiBoard from "./Component/Emoji/EmojiBoard";
-import GlobalStyle from "./Component/Emoji/GlobalStyles";
+// import EmojiBoard from "./Component/Emoji/EmojiBoard";
+// import GlobalStyle from "./Component/Emoji/GlobalStyles";
+import BaiTapGioHangRedux from "./Component/Redux/BaiTapGioHang/BaiTapGioHangRedux";
 function App() {
 	return (
 		<div className="App">
@@ -24,6 +25,7 @@ function App() {
 			{/* <BaiTapDemoProps /> */}
 			{/* <GlobalStyle /> */}
 			{/* <EmojiBoard /> */}
+			<BaiTapGioHangRedux />
 		</div>
 	);
 }
