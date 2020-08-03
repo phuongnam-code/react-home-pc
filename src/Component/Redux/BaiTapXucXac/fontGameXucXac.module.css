@@ -51,3 +51,8 @@
     left: 0;
     right: 0
 }
+.btnClick {
+    border-radius: 50%;
+    font-size: 85px; 
+    padding: 25px;
+}

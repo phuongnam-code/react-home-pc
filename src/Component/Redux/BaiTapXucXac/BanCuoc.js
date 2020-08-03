@@ -3,6 +3,11 @@ import styled from "./fontGameXucXac.module.css";
 import { connect } from "react-redux";
 
 class BanCuoc extends Component {
+	eventClick = (functionClicked) => {
+		let configCSS = styled.btnClick;
+		<style>{configCSS}</style>;
+		return functionClicked;
+	};
 	render() {
 		return (
 			<div className="container" style={{ position: "relative" }}>
@@ -11,7 +16,7 @@ class BanCuoc extends Component {
 						<button
 							className={`btn btn-dark display-4 bg-danger ${styled.config_BanCuoc_btn}`}
 							style={{ left: "10%" }}
-							onClick={() => this.props.selectTaiXiu(true, true)}
+							onClick={() => this.eventClick(this.props.selectTaiXiu(true, true))}
 						>
 							Tài
 						</button>
