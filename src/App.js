@@ -1,7 +1,8 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import BaiTapGameXucXac from "./Component/Redux/BaiTapXucXac/BaiTapGameXucXac";
+import BaiTapQuanLySinhVien from "./Component/ValidationForm/BaiTapQuanLySinhVien";
+// import BaiTapGameXucXac from "./Component/Redux/BaiTapXucXac/BaiTapGameXucXac";
 // import BaiTapChiaComponent from "./BaiTap_Deadline/BaiTapDeadline180720/BaiTapChiaComponent";
 // import DataBindingDemo from "./Component/DataBinding/DataBindingDemo";
 // import EventDemo from "./Component/Event/EventDemo";
@@ -27,7 +28,8 @@ function App() {
 			{/* <GlobalStyle /> */}
 			{/* <EmojiBoard /> */}
 			{/* <BaiTapGioHangRedux /> */}
-			<BaiTapGameXucXac />
+			{/* <BaiTapGameXucXac /> */}
+			<BaiTapQuanLySinhVien />
 		</div>
 	);
 }
