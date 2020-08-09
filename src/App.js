@@ -1,7 +1,7 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import BaiTapQuanLySinhVien from "./Component/ValidationForm/BaiTapQuanLySinhVien";
+// import BaiTapQuanLySinhVien from "./Component/ValidationForm/BaiTapQuanLySinhVien";
 // import BaiTapGameXucXac from "./Component/Redux/BaiTapXucXac/BaiTapGameXucXac";
 // import BaiTapChiaComponent from "./BaiTap_Deadline/BaiTapDeadline180720/BaiTapChiaComponent";
 // import DataBindingDemo from "./Component/DataBinding/DataBindingDemo";
@@ -14,6 +14,8 @@ import BaiTapQuanLySinhVien from "./Component/ValidationForm/BaiTapQuanLySinhVie
 // import EmojiBoard from "./Component/Emoji/EmojiBoard";
 // import GlobalStyle from "./Component/Emoji/GlobalStyles";
 // import BaiTapGioHangRedux from "./Component/Redux/BaiTapGioHang/BaiTapGioHangRedux";
+// import HomeScreen from "./Component/Axios/Screens/Home/index";
+import BaiTapBurger from "./BaiTap_Deadline/Burger/BaiTapBurger";
 function App() {
 	return (
 		<div className="App">
@@ -29,7 +31,9 @@ function App() {
 			{/* <EmojiBoard /> */}
 			{/* <BaiTapGioHangRedux /> */}
 			{/* <BaiTapGameXucXac /> */}
-			<BaiTapQuanLySinhVien />
+			{/* <BaiTapQuanLySinhVien /> */}
+			{/* <HomeScreen /> */}
+			<BaiTapBurger />
 		</div>
 	);
 }
