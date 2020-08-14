@@ -16,6 +16,7 @@ import "./App.css";
 // import BaiTapGioHangRedux from "./Component/Redux/BaiTapGioHang/BaiTapGioHangRedux";
 // import HomeScreen from "./Component/Axios/Screens/Home/index";
 import BaiTapBurger from "./BaiTap_Deadline/Burger/BaiTapBurger";
+import BookingMovie from "./BaiTap_Deadline/BookingMovie/BookingMovie";
 function App() {
 	return (
 		<div className="App">
@@ -33,7 +34,8 @@ function App() {
 			{/* <BaiTapGameXucXac /> */}
 			{/* <BaiTapQuanLySinhVien /> */}
 			{/* <HomeScreen /> */}
-			<BaiTapBurger />
+			{/* <BaiTapBurger /> */}
+			<BookingMovie />
 		</div>
 	);
 }
