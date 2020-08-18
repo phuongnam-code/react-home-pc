@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 class ChonGhe extends Component {
 	render() {
 		return (
-			<div className={`col-5 ${styleCSS.fontBookingMovie}`}>
+			<div className={`col-4 ${styleCSS.fontBookingMovie}`}>
 				<h4 className={styleCSS.fontBookingMovie}>Danh sách ghế bạn chọn</h4>
 				<div style={{ textAlign: "left", marginTop: "20px", display: "flex", alignItems: "center" }}>
 					<span className={styleCSS.ghe} style={{ display: "inline-block", marginRight: "10px" }}></span>
@@ -34,7 +34,7 @@ class ChonGhe extends Component {
 									<td>{ghe.soGhe}</td>
 									<td>{ghe.gia.toLocaleString()}</td>
 									<td>
-										<button className="btn text-danger" style={{ fontSize: "25px" }} onClick={() => this.props.huyGhe(ghe.soGhe)}>
+										<button className="btn text-danger" style={{ fontSize: "25px" }} onClick={() => this.props.huyGhe(ghe)}>
 											X
 										</button>
 									</td>
@@ -45,7 +45,9 @@ class ChonGhe extends Component {
 					<tfoot>
 						<tr>
 							<td>Tổng tiền</td>
-							<td colSpan="2">0</td>
+							<td colSpan="2" style={{ fontSize: "20px", color: "red" }}>
+								{this.props.tongTien.toLocaleString()}
+							</td>
 						</tr>
 					</tfoot>
 				</table>
@@ -57,14 +59,20 @@ class ChonGhe extends Component {
 const mapStateToProps = (state) => {
 	return {
 		gheDaDat: state.BookingMovieReducer.gheDaDat,
+		tongTien: state.BookingMovieReducer.tongTien,
 	};
 };
 const mapDispatchToProps = (dispatch) => {
 	return {
-		huyGhe: (viTriGhe) => {
+		huyGhe: (gheItem) => {
+			let gheDuocChon = {
+				soGhe: gheItem.soGhe,
+				gia: gheItem.gia,
+				daDat: gheItem.daDat,
+			};
 			let action = {
 				type: "HUY_GHE",
-				viTriGhe,
+				gheDuocChon,
 			};
 			dispatch(action);
 		},

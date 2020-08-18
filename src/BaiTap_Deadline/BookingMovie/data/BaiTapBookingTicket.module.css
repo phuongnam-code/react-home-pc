@@ -4,12 +4,13 @@
 }
 
 td{
-    font-size: 18px;
+    font-size: 14px;
     color: black;
     font-family: 'fontPony';
     border: none !important;
+    padding: 0.5em !important;
+    vertical-align: middle !important;
 }
-
 .bgContainer{
     /* background-image: url('./bgmovie.jpg'); */
     background-position: center center;
