@@ -1,6 +1,7 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
+import BaiTapForm from "./BaiTap_Deadline/BaiTapForm/BaiTapForm";
 // import BaiTapQuanLySinhVien from "./Component/ValidationForm/BaiTapQuanLySinhVien";
 // import BaiTapGameXucXac from "./Component/Redux/BaiTapXucXac/BaiTapGameXucXac";
 // import BaiTapChiaComponent from "./BaiTap_Deadline/BaiTapDeadline180720/BaiTapChiaComponent";
@@ -16,7 +17,7 @@ import "./App.css";
 // import BaiTapGioHangRedux from "./Component/Redux/BaiTapGioHang/BaiTapGioHangRedux";
 // import HomeScreen from "./Component/Axios/Screens/Home/index";
 // import BaiTapBurger from "./BaiTap_Deadline/Burger/BaiTapBurger";
-import BookingMovie from "./BaiTap_Deadline/BookingMovie/BookingMovie";
+// import BookingMovie from "./BaiTap_Deadline/BookingMovie/BookingMovie";
 function App() {
 	return (
 		<div className="App">
@@ -35,7 +36,8 @@ function App() {
 			{/* <BaiTapQuanLySinhVien /> */}
 			{/* <HomeScreen /> */}
 			{/* <BaiTapBurger /> */}
-			<BookingMovie />
+			{/* <BookingMovie /> */}
+			<BaiTapForm />
 		</div>
 	);
 }

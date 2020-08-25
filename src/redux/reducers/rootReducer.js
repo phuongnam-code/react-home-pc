@@ -5,6 +5,7 @@ import QuanLySinhVienReducer from "./QuanLySinhVienReducer";
 import CourseReducer from "./CourseReducer";
 import BurgerReducer from "./BurgerReducer";
 import BookingMovieReducer from "./BookingMovieReducer";
+import FormReducer from "./FormReducer";
 //store tổng ứng dụng
 export const rootReducer = combineReducers({
 	//nơi sẽ chứa các reducer cho nghiệp vụ con(store con)
@@ -14,4 +15,5 @@ export const rootReducer = combineReducers({
 	CourseReducer,
 	BurgerReducer,
 	BookingMovieReducer,
+	FormReducer,
 });

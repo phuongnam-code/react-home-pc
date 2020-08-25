@@ -1,0 +1,37 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #EEEEEE;
+    
+}.wrap{
+    margin-top:40px;
+}
+.card__config{
+    width: 40%;
+    margin: 0 auto;
+    padding: 40px 20px ;
+}
+
+
+input {
+    /* width: 100% ; */
+    border: none !important;
+    border-bottom: 1px solid black !important;
+}
+
+.__config50{
+    width: 50% ;
+    display: inline-block ;
+}
+.__config45{
+    width: 47% ;
+    margin-left:10px ;
+    display: inline-block ;
+}
+button{
+    font-weight: 700 !important ;
+    width: 100%;
+    margin-top: 10px;
+}

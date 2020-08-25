@@ -16,18 +16,24 @@ class DSGhe extends Component {
 	};
 
 	renderDSGhe = (listGhe) => {
-		return listGhe.map((item, index) => {
+		return listGhe.map((ghe, index) => {
+			if (ghe.daDat) {
+				return (
+					<td key={index}>
+						<button className={styleCSS.gheDuocChon} disabled>
+							X
+						</button>
+					</td>
+				);
+			}
+			let indexGheDD = this.props.gheDaDat.findIndex((gheDD) => {
+				return gheDD.soGhe === ghe.soGhe;
+			});
 			return (
 				<td key={index}>
-					{item.daDat === false ? (
-						<button className={styleCSS.ghe} style={{ background: "white" }} onClick={() => this.props.chonGhe(item)}>
-							{item.soGhe}
-						</button>
-					) : (
-						<button className={styleCSS.gheDuocChon} disabled>
-							{item.soGhe}
-						</button>
-					)}
+					<button className={`${styleCSS.ghe} ${indexGheDD !== -1 ? styleCSS.gheDangChon : ""}`} onClick={() => this.props.chonGhe(ghe)}>
+						{ghe.soGhe}
+					</button>
 				</td>
 			);
 		});
@@ -63,6 +69,7 @@ class DSGhe extends Component {
 const mapStateToProps = (state) => {
 	return {
 		dsGhe: state.BookingMovieReducer.data,
+		gheDaDat: state.BookingMovieReducer.gheDaDat,
 	};
 };
 
